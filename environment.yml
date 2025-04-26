@@ -1,0 +1,15 @@
+name: fpc-hackathon
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - scipy
+  - matplotlib
+  - conda-forge::casadi
+  - conda-forge::control
+  - conda-forge::slycot
+  - conda-forge::jupyterlab
+  - ipywidgets
+  - nbconvert
+  - nbformat
