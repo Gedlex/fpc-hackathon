@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import matplotlib
 import numpy as np
+from matplotlib import animation
 
 from models.baseModel import BaseModel
 
@@ -100,30 +101,46 @@ class RocketXZModel(BaseModel):
 
         sim_length = u_trajectory.shape[1]
         fig, ax = plt.subplots()
-        for i in range(sim_length+1):
-            ax.set_aspect('equal')
-            ax.set_xlim(-1, 5)
-            ax.set_ylim(-1, 5)
-            ax.set_xlabel('px(m)', fontsize=14)
-            ax.set_ylabel('pz(m)', fontsize=14)
-            center_x = x_trajectory[0, i]
-            center_z = x_trajectory[1, i]
-            ax.scatter(center_x, center_z, color="tab:gray", s=50, zorder=2)
-            rocket_vertices = compute_rocket_vertices(x_trajectory[:, i])
-            ax.plot(rocket_vertices[0, :], rocket_vertices[1, :], color="tab:blue", linewidth=2, zorder=1)
-            if i < sim_length:
-                thrust_polygon = compute_thrust_polygon(x_trajectory[:, i], u_trajectory[:, i])
-                ax.add_patch(thrust_polygon)
-            if additional_lines_or_scatters is not None:
-                for key, value in additional_lines_or_scatters.items():
-                    if value["type"] == "scatter":
-                        ax.scatter(value["data"][0], value["data"][1], color=value["color"], s=value["s"], label=key, marker=value["marker"], zorder=3)
-                    elif value["type"] == "line":
-                        ax.plot(value["data"][0], value["data"][1], color=value["color"], linewidth=2, label=key)
-            ax.set_title(f"Rocket XZ Simulation: Step {i+1}")
+        ax.set_aspect('equal')
+        ax.set_xlim(-1, 5)
+        ax.set_ylim(-1, 5)
+        ax.set_xlabel('px(m)', fontsize=14)
+        ax.set_ylabel('pz(m)', fontsize=14)
+
+        rocket_line, = ax.plot([], [], color="tab:blue", linewidth=2, zorder=1)
+        rocket_dot = ax.scatter([], [], color="tab:gray", s=50, zorder=2)
+        thrust_patch = [None]  # mutable container for patch
+        extra_elements = []
+
+        if additional_lines_or_scatters:
+            for key, value in additional_lines_or_scatters.items():
+                if value["type"] == "scatter":
+                    s = ax.scatter(value["data"][0], value["data"][1], color=value["color"], s=value["s"], label=key, marker=value["marker"], zorder=3)
+                    extra_elements.append(s)
+                elif value["type"] == "line":
+                    l, = ax.plot(value["data"][0], value["data"][1], color=value["color"], linewidth=2, label=key)
+                    extra_elements.append(l)
             ax.legend(loc="lower right")
-            fig.subplots_adjust(bottom=0.15)
-            plt.show(block=False)
-            plt.pause(1.0 if i == sim_length else 0.2)
-            ax.clear()
-        return
+
+        def init():
+            rocket_line.set_data([], [])
+            rocket_dot.set_offsets(np.empty((0, 2)))
+            return [rocket_line, rocket_dot] + extra_elements
+
+        def update(i):
+            ax.set_title(f"Rocket XZ Simulation: Step {i+1}")
+            x = x_trajectory[:, i]
+            u = u_trajectory[:, i] if i < sim_length else u_trajectory[:, -1]
+            rocket_vertices = compute_rocket_vertices(x)
+            rocket_line.set_data(rocket_vertices[0, :], rocket_vertices[1, :])
+            rocket_dot.set_offsets([[x[0], x[1]]])
+
+            # Remove old patch if exists
+            if thrust_patch[0]:
+                thrust_patch[0].remove()
+            thrust_patch[0] = compute_thrust_polygon(x, u)
+            ax.add_patch(thrust_patch[0])
+            return [rocket_line, rocket_dot, thrust_patch[0]] + extra_elements
+
+        anim = animation.FuncAnimation(fig, update, frames=sim_length+1, init_func=init, blit=False, repeat=False)
+        return anim 
