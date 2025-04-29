@@ -82,7 +82,7 @@ class BicycleXYMultiAgentCtrl:
                 self._J += self._u_opt[i_agent*nu:(i_agent+1)*nu, i].T @ self._ctrl_config.R @ self._u_opt[i_agent*nu:(i_agent+1)*nu, i]  # Control cost
             # Terminal cost
             x_diff = self._x_opt[i_agent*nx:(i_agent+1)*nx, -1] - self._goal_param[i_agent*nx:(i_agent+1)*nx, :]
-            self._J += x_diff.T @ self._ctrl_config.Q_e @ x_diff
+            self._J += x_diff.T @ self._ctrl_config.Q @ x_diff
         return
 
     def setup_OCP(self):
