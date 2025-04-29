@@ -50,7 +50,7 @@ class BaseModel:
         asteroid_coords = self.createAsteroid(x_init)
         for i in range(sim_length):
             
-            u = controller(x_trajectory[:, i])
+            u = controller(x_trajectory[:, i], asteroid_coords)
             u_trajectory[:, i] = u
             for i_agent in range(num_agents):
                 x_trajectory[i_agent*nx:(i_agent+1)*nx, i+1] = self.f_disc(x_trajectory[i_agent*nx:(i_agent+1)*nx, i], u[i_agent*nu:(i_agent+1)*nu]).full().flatten()
