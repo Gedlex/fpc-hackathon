@@ -1,1 +1,1 @@
-from models.rocketXZModel import RocketXZModel
+from models.rocketXZModel import RocketXZModel, RocketXZConfig
