@@ -24,10 +24,12 @@ class RocketXZConfig:
 
 
 class RocketXZModel(BaseModel):
-    def __init__(self, sampling_time):
+    def __init__(self, sampling_time, gravity=True):
         super().__init__(sampling_time)
         self.model_name = "RocketXZModel"
         self.model_config = RocketXZConfig()
+        if not gravity:
+            self.model_config.gravity = 0.0
 
         x = ca.MX.sym('x', self.model_config.nx)
         u = ca.MX.sym('u', self.model_config.nu)
