@@ -5,6 +5,7 @@ dependencies:
   - python=3.9
   - numpy
   - scipy
+  - plotly
   - matplotlib
   - conda-forge::casadi
   - conda-forge::control

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   x="0"
+   y="0"
+   width="313.79999"
+   height="289.20001"
+   style="fill:none"
+   version="1.1"
+   id="svg2034"
+   sodipodi:docname="rocketSketch.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2038" />
+  <sodipodi:namedview
+     id="namedview2036"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.8821752"
+     inkscape:cx="215.44222"
+     inkscape:cy="142.12279"
+     inkscape:window-width="1390"
+     inkscape:window-height="1205"
+     inkscape:window-x="423"
+     inkscape:window-y="91"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2034" />
+  <svg
+     class="role-diagram-draw-area"
+     version="1.1"
+     id="svg1978"
+     width="100%"
+     height="100%"
+     transform="translate(-18.8,-9)">
+    <g
+       class="shapes-region"
+       style="fill:none;stroke:#000000"
+       id="g1970">
+      <g
+         class="composite-shape"
+         id="g1904">
+        <path
+           class="real"
+           d="M 18.8,9 H 332.6 V 298.2 H 18.8 Z"
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1"
+           id="path1902" />
+      </g>
+      <g
+         class="arrow-line"
+         id="g1908">
+        <path
+           class="connection real"
+           stroke-dasharray="1.125, 3.35"
+           d="M 130,20 V 280"
+           style="fill:none;fill-opacity:1;stroke:#9b9b9b;stroke-width:1;stroke-opacity:1"
+           id="path1906" />
+      </g>
+      <g
+         class="grouped-shape"
+         id="g1928">
+        <g
+           class="grouped-shape"
+           id="g1918">
+          <g
+             class="composite-shape"
+             id="g1912">
+            <path
+               class="real"
+               d="m 127.48,55.81 -37.67,17.56 45,96.5 37.66,-17.57 z"
+               style="fill:#cbcbcb;fill-opacity:1;stroke:#000000;stroke-width:1"
+               id="path1910" />
+          </g>
+          <g
+             class="composite-shape"
+             id="g1916">
+            <path
+               class="real"
+               d="m 96.71,38.99 -6.9,34.38 37.67,-17.56 z"
+               style="fill:#cbcbcb;fill-opacity:1;stroke:#000000;stroke-width:1"
+               id="path1914" />
+          </g>
+        </g>
+        <g
+           class="composite-shape"
+           id="g1926">
+          <path
+             class="real"
+             d="m 135.62,107.79 c -1.39,-2.98 -5.01,-4.24 -8.07,-2.81 -3.07,1.43 -4.43,5.01 -3.04,7.99 1.39,2.98 5,4.24 8.07,2.81 3.07,-1.43 4.43,-5.01 3.04,-7.99 z"
+             style="fill:#cbcbcb;fill-opacity:1;stroke:#000000;stroke-width:1"
+             id="path1920" />
+          <path
+             class="real"
+             d="m 135.62,107.79 -11.11,5.18"
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1"
+             id="path1922" />
+          <path
+             class="real"
+             d="m 127.55,104.98 5.03,10.8"
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1"
+             id="path1924" />
+        </g>
+      </g>
+      <g
+         class="arrow-line"
+         id="g1932">
+        <path
+           class="connection real"
+           stroke-dasharray="none"
+           d="m 187,232.13 c 7,-3.5 12.25,-7 15.75,-10"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1"
+           id="path1930" />
+      </g>
+      <g
+         class="arrow-line"
+         id="g1940">
+        <path
+           class="connection real"
+           stroke-dasharray="none"
+           d="M 41,281 H 307.67"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1"
+           id="path1934" />
+        <g
+           stroke="none"
+           fill="#000"
+           transform="rotate(180,154.83333,140.5)"
+           style="fill:#000000;stroke:none;stroke-width:1"
+           id="g1938">
+          <path
+             d="M 12,-3 0,0 12,3 Z"
+             id="path1936" />
+        </g>
+      </g>
+      <g
+         class="arrow-line"
+         id="g1948">
+        <path
+           class="connection real"
+           stroke-dasharray="none"
+           d="M 41,281 40.34,33.67"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1"
+           id="path1942" />
+        <g
+           stroke="none"
+           fill="#000"
+           transform="rotate(89.85,4.2918274,36.052865)"
+           style="fill:#000000;stroke:none;stroke-width:1"
+           id="g1946">
+          <path
+             d="M 12,-3 0,0 12,3 Z"
+             id="path1944" />
+        </g>
+      </g>
+      <g
+         class="arrow-line"
+         id="g1952">
+        <path
+           class="connection real"
+           stroke-dasharray="none"
+           d="m 130,250 c 20.5,0 39.25,-4.12 58.5,-13.62"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1"
+           id="path1950" />
+      </g>
+      <g
+         class="arrow-line"
+         id="g1956">
+        <path
+           class="connection real"
+           stroke-dasharray="5, 4, 10, 2"
+           d="M 84.5,12.95 202.33,265.67"
+           style="fill:none;fill-opacity:1;stroke:#585858;stroke-width:1;stroke-opacity:1"
+           id="path1954" />
+      </g>
+      <g
+         class="grouped-shape"
+         id="g1966">
+        <g
+           class="arrow-line"
+           id="g1960">
+          <path
+             class="connection real"
+             stroke-dasharray="5, 4, 10, 2"
+             d="m 154.23,162.3 61.6,75.46"
+             style="fill:#ff1f1f;fill-opacity:1;stroke:#9b9b9b;stroke-width:1;stroke-opacity:1"
+             id="path1958" />
+        </g>
+        <g
+           class="composite-shape"
+           id="g1964">
+          <path
+             class="real"
+             d="m 154.23,162.3 12.67,34.9 19.27,-15.95 z"
+             style="fill:#ff1f1f;fill-opacity:1;stroke:#000000;stroke-width:1"
+             id="path1962" />
+        </g>
+      </g>
+      <g
+         id="g1968" />
+    </g>
+    <g
+       id="g1972" />
+    <g
+       id="g1974" />
+    <g
+       id="g1976" />
+  </svg>
+  <svg
+     width="660"
+     height="300"
+     style="font-family:Asana-Math, Asana"
+     version="1.1"
+     id="svg2032"
+     transform="translate(-18.8,-9)">
+    <g
+       id="g1994">
+      <g
+         id="g1992">
+        <g
+           id="g1990">
+          <g
+             id="g1988">
+            <g
+               id="g1986">
+              <g
+                 id="g1984">
+                <g
+                   transform="translate(300.5,295.66406)"
+                   id="g1982">
+                  <path
+                     transform="scale(0.017,-0.017)"
+                     d="m 9,1 c 15,-8 31,-12 43,-12 33,0 72,29 103,76 l 76,117 11,-69 c 13,-85 36,-124 72,-124 22,0 54,17 86,46 l 49,44 -9,19 C 404,68 379,53 363,53 c -15,0 -28,10 -38,30 -9,19 -20,56 -25,85 l -18,101 35,49 c 47,65 74,88 105,88 16,0 28,-8 33,-23 l 14,4 15,85 c -12,7 -21,10 -30,10 -40,0 -80,-36 -142,-128 l -37,-55 -6,48 c -12,99 -39,135 -98,135 -26,0 -48,-8 -57,-21 L 56,378 73,368 c 30,34 50,48 69,48 33,0 55,-41 72,-139 l 11,-62 -40,-62 C 142,86 108,54 80,54 65,54 54,58 52,63 L 41,91 21,88 C 21,53 13,27 9,1 Z"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="8"
+                     fill="#000000"
+                     fill-opacity="1"
+                     id="path1980" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g2010">
+      <g
+         id="g2008">
+        <g
+           id="g2006">
+          <g
+             id="g2004">
+            <g
+               id="g2002">
+              <g
+                 id="g2000">
+                <g
+                   transform="translate(25.5625,43.664062)"
+                   id="g1998">
+                  <path
+                     transform="scale(0.017,-0.017)"
+                     d="m 322,-11 c 12,0 21,2 50,10 11,62 19,96 30,143 H 380 L 358,82 c -6,-18 -18,-25 -39,-25 -12,0 -28,2 -49,7 l -18,4 c -33,7 -67,12 -86,12 -32,0 -59,-6 -95,-21 l 339,382 6,32 -9,9 -23,-23 c -10,-10 -20,-14 -34,-14 -34,0 -86,8 -134,21 l -18,5 c -28,7 -48,11 -62,11 -17,0 -37,-3 -61,-10 L 43,350 h 21 l 30,58 c 17,4 26,5 39,5 41,0 73,-15 126,-15 36,0 60,6 93,23 L -1,21 8,-6 c 29,23 56,32 91,32 63,0 154,-37 223,-37 z"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="8"
+                     fill="#000000"
+                     fill-opacity="1"
+                     id="path1996" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g2020">
+      <g
+         id="g2018">
+        <g
+           id="g2016">
+          <g
+             transform="translate(187,225.75)"
+             id="g2014">
+            <path
+               transform="scale(0.017,-0.017)"
+               d="m 183,-16 c 157,0 270,155 272,303 3,183 -239,220 -228,335 7,76 129,67 186,33 h 10 c -3,12 -6,26 -12,39 -95,21 -244,4 -255,-97 -7,-57 68,-104 110,-133 v -6 C 123,426 31,304 29,160 27,53 70,-16 183,-16 Z m 26,28 c -84,0 -104,87 -103,155 2,128 47,244 181,281 62,-49 94,-98 93,-179 C 378,174 327,12 209,12 Z"
+               stroke="#000000"
+               stroke-opacity="1"
+               stroke-width="8"
+               fill="#000000"
+               fill-opacity="1"
+               id="path2012" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g2030">
+      <g
+         id="g2028">
+        <g
+           id="g2026">
+          <g
+             transform="translate(150.75,238.75)"
+             id="g2024">
+            <path
+               transform="scale(0.017,-0.017)"
+               d="m 622,285 c 2,143 -117,189 -240,188 16,75 25,151 50,226 v 6 c -14,-5 -28,-12 -43,-21 L 354,473 C 184,474 30,367 27,185 24,37 142,-8 268,-16 l -39,-273 c 20,7 38,15 53,28 1,82 6,163 17,245 182,13 319,103 323,301 z M 539,273 C 537,130 451,11 301,6 l 76,443 C 487,447 541,380 539,273 Z M 349,449 270,5 c -115,9 -164,68 -162,182 3,149 88,257 241,262 z"
+               stroke="#000000"
+               stroke-opacity="1"
+               stroke-width="8"
+               fill="#000000"
+               fill-opacity="1"
+               id="path2022" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</svg>
