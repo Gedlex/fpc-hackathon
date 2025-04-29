@@ -47,9 +47,10 @@ class BaseModel:
         x_trajectory = np.zeros((nx * num_agents, sim_length+1))
         u_trajectory = np.zeros((nu * num_agents, sim_length))
         x_trajectory[:, 0] = x_init.flatten()
-        asteroid_coords = self.createAsteroid(x_init)
+        asteroid_coords1 = self.createAsteroid(x_init[:2] + np.array([1, 0]))
+        asteroid_coords2 = self.createAsteroid(np.array([4, 0]))
+        asteroid_coords = np.vstack((asteroid_coords1, asteroid_coords2))
         for i in range(sim_length):
-            
             u = controller(x_trajectory[:, i], asteroid_coords)
             u_trajectory[:, i] = u
             for i_agent in range(num_agents):
